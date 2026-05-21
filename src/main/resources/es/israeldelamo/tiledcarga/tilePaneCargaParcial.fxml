@@ -3,24 +3,42 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<fx:root type="javafx.scene.layout.HBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-         xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root alignment="CENTER" prefHeight="90.0" prefWidth="300.0" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
 
       <children>
-         <Label fx:id="lb_peso_unitario" text="peso_unitario" />
-         <Label fx:id="lb_cantidad_bultos" text="cantidad_bultos" />
-         <Label fx:id="lb_dimension_l" text="dimension_l" />
-         <Label fx:id="lb_dimension_h" text="dimension_h" />
-         <Label fx:id="lb_dimension_a" text="dimension_a" />
-         <Label fx:id="lb_pais_origen" text="pais_origen" />
-         <Label fx:id="lb_pais_destino" text="pais_destino" />
-         <Label fx:id="lb_fecha_creacción" text="fecha_creacción" />
-         <Button fx:id="btn_reservar" text="Reservar" />
+      <VBox alignment="BASELINE_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="NEVER">
+         <children>
+               <Label fx:id="lb_pais_origen" text="pais_origen" />
+               <Label fx:id="lb_pais_destino" text="pais_destino" />
+         </children>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="BASELINE_CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="NEVER">
+         <children>
+               <Label fx:id="lb_dimension_l" text="dimension_l" />
+               <Label fx:id="lb_dimension_h" text="dimension_h" />
+               <Label fx:id="lb_dimension_a" text="dimension_a" />
+         </children>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="BASELINE_RIGHT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="NEVER">
+         <children>
+               <Label fx:id="lb_peso_unitario" text="peso_unitario" />
+               <Label fx:id="lb_cantidad_bultos" text="cantidad_bultos" />
+               <Label fx:id="lb_fecha_creacción" text="fecha_creacción" />
+               <Button fx:id="btn_reservar" text="Reservar" />
+         </children>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+      </VBox>
       </children>
 
 </fx:root>
-
-
