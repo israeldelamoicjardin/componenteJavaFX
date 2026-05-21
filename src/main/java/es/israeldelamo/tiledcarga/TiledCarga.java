@@ -1,15 +1,18 @@
 package es.israeldelamo.tiledcarga;
 
-import com.sun.tools.javac.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.VBox;
-
+import javafx.scene.layout.HBox;
 import java.io.IOException;
 
-public class TiledCarga extends VBox {
+/**
+ * Una clase para crear pequeños tiles dentro de un tilepane de javafx pero que contengan muy poca información
+ *
+ */
+
+public class TiledCarga extends HBox {
     @FXML
     private Button btn_reservar;
 
@@ -38,7 +41,7 @@ public class TiledCarga extends VBox {
     private Label lb_peso_unitario;
 
     public TiledCarga() {
-        FXMLLoader loader = new FXMLLoader(Main.class.getResource("tilePaneCargaParcial.fxml"));
+        FXMLLoader loader = new FXMLLoader(TiledCarga.class.getResource("tilePaneCargaParcial.fxml"));
         loader.setRoot(this);
         loader.setController(this);
         try {
