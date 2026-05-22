@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<fx:root alignment="CENTER" prefHeight="90.0" prefWidth="300.0" style="-fx-border-color: blue; -fx-background-radius: 2px;" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root alignment="CENTER" prefHeight="90.0" prefWidth="300.0" style="-fx-border-color: blue; -fx-background-radius: 2px;" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/23.0.2" xmlns:fx="http://javafx.com/fxml/1">
 
       <children>
       <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="NEVER">
@@ -61,7 +61,7 @@
          <children>
                <Label fx:id="lb_peso_unitario" text="peso_unitario" />
                <Label fx:id="lb_cantidad_bultos" text="cantidad_bultos" />
-               <Label fx:id="lb_fecha_creacción" text="fecha_creacción" />
+               <Label fx:id="lb_fecha_creacción" text="fecha_creaccion" />
                <Button fx:id="btn_reservar" text="Reservar" />
          </children>
          <padding>
