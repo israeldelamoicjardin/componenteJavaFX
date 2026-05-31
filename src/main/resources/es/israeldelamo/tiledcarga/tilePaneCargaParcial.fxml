@@ -51,7 +51,8 @@
       </VBox>
       <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="300.0" HBox.hgrow="NEVER">
          <children>
-               <Label fx:id="lb_peso_unitario" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="341.0" text="peso_unitario" textAlignment="RIGHT" />
+               <Label fx:id="lb_tipo_bulto" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="341.0" text="tipo_bulto" textAlignment="RIGHT" />
+            <Label fx:id="lb_peso_unitario1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="341.0" text="peso_unitario" textAlignment="RIGHT" />
                <Label fx:id="lb_cantidad_bultos" prefHeight="17.0" prefWidth="323.0" text="cantidad_bultos" />
                <Label fx:id="lb_fecha_creaccion" prefHeight="17.0" prefWidth="301.0" text="fecha_creaccion" />
                <Button fx:id="btn_reservar" onAction="#onReservar" text="Ver Esta Carga" />

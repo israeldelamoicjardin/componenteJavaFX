@@ -27,6 +27,8 @@ public class TiledCarga extends HBox {
     @FXML
     private Label lb_cantidad_bultos;
 
+    @FXML
+    private Label lb_tipo_bulto;
 
     @FXML
     private Label lb_dimension;
@@ -74,29 +76,23 @@ public class TiledCarga extends HBox {
 
     public void setLb_provincia_destino(String lb_provincia_destino) {this.lb_provincia_destino.setText(lb_provincia_destino);    }
 
-    public void setLb_pais_origen(String lb_pais_origen) {
-        this.lb_pais_origen.setText(lb_pais_origen);
-    }
+    public void setLb_pais_origen(String lb_pais_origen) {        this.lb_pais_origen.setText(lb_pais_origen);    }
 
-    public void setLb_pais_destino(String lb_pais_destino) {
-        this.lb_pais_destino.setText(lb_pais_destino);
-    }
+    public void setLb_pais_destino(String lb_pais_destino) {        this.lb_pais_destino.setText(lb_pais_destino);    }
 
+
+    public void setLb_tipo_bulto(String lb_tipo_bulto) {this.lb_tipo_bulto.setText(lb_tipo_bulto);  }
 
 
 
     public void setLb_carga_completa_o_grupaje(String lb_carga_completa_o_grupaje) {this.lb_carga_completa_o_grupaje.setText(lb_carga_completa_o_grupaje);    }
 
 
-    public void setLb_peso_unitario(String lb_peso_unitario) {
-        this.lb_peso_unitario.setText(lb_peso_unitario);
-    }
+    public void setLb_peso_unitario(String lb_peso_unitario) {        this.lb_peso_unitario.setText(lb_peso_unitario);    }
 
 
 
-    public void setLb_dimension(String lb_dimension) {
-        this.lb_dimension.setText(lb_dimension);
-    }
+    public void setLb_dimension(String lb_dimension) {        this.lb_dimension.setText(lb_dimension);    }
 
 
 
@@ -123,7 +119,5 @@ public class TiledCarga extends HBox {
 
     }
 
-    public Button getBtn_reservar() {
-        return btn_reservar;
-    }
+    public Button getBtn_reservar() {        return btn_reservar;    }
 }
