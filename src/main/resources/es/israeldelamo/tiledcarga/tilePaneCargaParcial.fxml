@@ -6,24 +6,31 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<fx:root alignment="CENTER" prefHeight="150.0" prefWidth="800.0" style="-fx-border-color: blue; -fx-background-radius: 2px; -fx-font-size: 14;" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root alignment="CENTER" prefHeight="150.0" prefWidth="800.0" style="-fx-border-color: blue; -fx-background-radius: 2px; -fx-font-size: 16;" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
 
       <children>
       <VBox alignment="CENTER_LEFT" prefHeight="148.0" prefWidth="252.0" HBox.hgrow="NEVER">
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="147.0" VBox.vgrow="ALWAYS">
                <children>
-                  <ImageView fx:id="iv_pais_origen" accessibleText="bandera" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
-                      <Label fx:id="lb_pais_origen" prefHeight="17.0" prefWidth="336.0" style="-fx-font-weight: bold;" text="pais_origen" HBox.hgrow="ALWAYS" />
+                  <ImageView fx:id="iv_pais_origen" accessibleText="bandera" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                      <Label fx:id="lb_pais_origen" prefHeight="17.0" prefWidth="336.0" style="-fx-font-weight: bold;" text="pais_origen" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
                </children>
             </HBox>
             <Label fx:id="lb_provincia_origen" prefHeight="17.0" prefWidth="309.0" text="provincia_origen">
             </Label>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="210.0">
                <children>
-                  <ImageView fx:id="iv_pais_destino" accessibleText="bandera" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
-                      <Label fx:id="lb_pais_destino" prefHeight="17.0" prefWidth="252.0" style="-fx-font-weight: bold;" text="pais_destino" HBox.hgrow="ALWAYS" />
+                  <ImageView fx:id="iv_pais_destino" accessibleText="bandera" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                      <Label fx:id="lb_pais_destino" prefHeight="17.0" prefWidth="252.0" style="-fx-font-weight: bold;" text="pais_destino" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
                </children>
             </HBox>
             <Label fx:id="lb_provincia_destino" prefHeight="17.0" prefWidth="324.0" text="provincia_destino">
