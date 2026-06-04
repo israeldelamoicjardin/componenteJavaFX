@@ -1,0 +1,9 @@
+<settings>
+    <servers>
+        <server>
+            <id>central</id>
+            <username><!-- your token username --></username>
+            <password><!-- your token password --></password>
+        </server>
+    </servers>
+</settings>
