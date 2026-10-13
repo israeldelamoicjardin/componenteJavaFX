@@ -8,7 +8,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<fx:root alignment="CENTER" prefHeight="110.0" prefWidth="800.0" style="-fx-border-color: blue; -fx-background-radius: 2px;" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root alignment="CENTER" prefHeight="110.0" prefWidth="800.0"
+         style="-fx-border-color: blue; -fx-background-radius: 2px;"
+         fx:controller="es.israeldelamo.tiledcarga.TiledCarga"
+         type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/23.0.2" xmlns:fx="http://javafx.com/fxml/1">
 
       <children>
       <VBox alignment="CENTER_LEFT" prefHeight="108.0" prefWidth="300.0" HBox.hgrow="NEVER">
