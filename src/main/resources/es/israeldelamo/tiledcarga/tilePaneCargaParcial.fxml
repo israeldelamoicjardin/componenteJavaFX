@@ -8,17 +8,17 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<fx:root alignment="CENTER" prefHeight="150.0" prefWidth="800.0" style="-fx-border-color: blue; -fx-background-radius: 2px; -fx-font-size: 16;" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root alignment="CENTER" prefHeight="110.0" prefWidth="800.0" style="-fx-border-color: blue; -fx-background-radius: 2px;" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
 
       <children>
-      <VBox alignment="CENTER_LEFT" prefHeight="148.0" prefWidth="252.0" HBox.hgrow="NEVER">
+      <VBox alignment="CENTER_LEFT" prefHeight="108.0" prefWidth="300.0" HBox.hgrow="NEVER">
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="147.0" VBox.vgrow="ALWAYS">
                <children>
-                  <ImageView fx:id="iv_pais_origen" accessibleText="bandera" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
-                      <Label fx:id="lb_pais_origen" prefHeight="17.0" prefWidth="336.0" style="-fx-font-weight: bold;" text="pais_origen" HBox.hgrow="ALWAYS">
+                  <ImageView fx:id="iv_pais_origen" accessibleText="bandera" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                     <Label fx:id="lb_pais_origen" prefHeight="17.0" prefWidth="336.0" text="pais_origen" HBox.hgrow="ALWAYS">
                      <font>
-                        <Font size="24.0" />
+                        <Font name="Arial Black" size="12.0" />
                      </font></Label>
                </children>
             </HBox>
@@ -26,10 +26,10 @@
             </Label>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="210.0">
                <children>
-                  <ImageView fx:id="iv_pais_destino" accessibleText="bandera" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
-                      <Label fx:id="lb_pais_destino" prefHeight="17.0" prefWidth="252.0" style="-fx-font-weight: bold;" text="pais_destino" HBox.hgrow="ALWAYS">
+                  <ImageView fx:id="iv_pais_destino" accessibleText="bandera" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                     <Label fx:id="lb_pais_destino" prefHeight="17.0" prefWidth="286.0" text="pais_destino" HBox.hgrow="ALWAYS">
                      <font>
-                        <Font size="24.0" />
+                        <Font name="Arial Black" size="12.0" />
                      </font></Label>
                </children>
             </HBox>
@@ -42,18 +42,19 @@
       </VBox>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="NEVER">
          <children>
-               <Label fx:id="lb_dimension" alignment="CENTER" contentDisplay="CENTER" prefWidth="220.0" text="dimension_h" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
-            <Label fx:id="lb_carga_completa_o_grupaje" alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="52.0" prefWidth="221.0" text="lb_carga_completa_o_grupaje" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" VBox.vgrow="ALWAYS" />
+               <Label fx:id="lb_dimension" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="220.0" text="dimension_h" textAlignment="CENTER" />
+            <Label fx:id="lb_carga_completa_o_grupaje" alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="52.0" prefHeight="44.0" prefWidth="221.0" text="lb_carga_completa_o_grupaje" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" VBox.vgrow="ALWAYS" />
          </children>
          <padding>
             <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
          </padding>
       </VBox>
-      <VBox alignment="CENTER_RIGHT" prefHeight="148.0" prefWidth="333.0" HBox.hgrow="NEVER">
+      <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="300.0" HBox.hgrow="NEVER">
          <children>
-               <Label fx:id="lb_peso_unitario" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="341.0" text="peso_unitario" textAlignment="RIGHT" VBox.vgrow="ALWAYS" />
-               <Label fx:id="lb_cantidad_bultos" prefHeight="17.0" prefWidth="339.0" text="cantidad_bultos" VBox.vgrow="ALWAYS" />
-               <Label fx:id="lb_fecha_creaccion" prefHeight="17.0" prefWidth="345.0" text="fecha_creaccion" VBox.vgrow="ALWAYS" />
+               <Label fx:id="lb_tipo_bulto" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="341.0" text="tipo_bulto" textAlignment="RIGHT" />
+            <Label fx:id="lb_peso_unitario1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="341.0" text="peso_unitario" textAlignment="RIGHT" />
+               <Label fx:id="lb_cantidad_bultos" prefHeight="17.0" prefWidth="323.0" text="cantidad_bultos" />
+               <Label fx:id="lb_fecha_creaccion" prefHeight="17.0" prefWidth="301.0" text="fecha_creaccion" />
                <Button fx:id="btn_reservar" onAction="#onReservar" text="Ver Esta Carga" />
          </children>
          <padding>
