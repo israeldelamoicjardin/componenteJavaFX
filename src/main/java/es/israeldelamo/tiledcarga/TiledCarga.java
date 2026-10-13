@@ -105,7 +105,12 @@ public class TiledCarga extends HBox {
     }
 
 
-
+    public Label getLb_pais_destino(){
+        return this.lb_pais_destino;
+    };
+    public Label getLb_pais_origen(){
+        return this.lb_pais_origen;
+    };
 
     public TiledCarga() {
         FXMLLoader loader = new FXMLLoader(TiledCarga.class.getResource("tilePaneCargaParcial.fxml"));
